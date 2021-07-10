@@ -1,0 +1,110 @@
+@media (min-width: 1024px){
+    .contact-father{
+        @include flex-col-between;
+        margin:   auto;
+       position: relative;
+       top: 16vh;
+    }
+    
+    .name, .email{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid red;
+        height: 4vh;
+        width: 26vw;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .send {
+        margin-top: 2vh;
+    height: 4vh;
+    width: 8vw;
+    background-color: rgb(0, 174, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    }
+    }
+    @media (max-width: 1024px){ 
+    .contact-father{
+        @include flex-col-between;
+        margin: auto;
+       position: relative;
+       top: 16vh;
+    }
+    
+    .name, .email{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid red;
+        height: 4vh;
+        width: 33vw;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .send {
+        margin-top: 2vh;
+    height: 4vh;
+    width: 8vw;
+    background-color: rgb(0, 174, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    }
+    }
+    
+    @media (max-width: 700px){
+    .contact-father{
+        @include flex-col-between;
+        margin: auto;
+       position: relative;
+       top: 16vh;
+    }
+    
+    .name, .email{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border-bottom: 1px solid red;
+        height: 4vh;
+        width: 48vw;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .send {
+        margin-top: 2vh;
+    height: 4vh;
+    width: 16vw;
+    background-color: rgb(0, 174, 255);
+    font-size: 1.5rem;
+    text-align: center;
+    }
+    }
+    @media (max-width: 550px){
+        textarea{
+            width: 88vw;
+        }
+        .name{
+            border: 1rem solid blue;
+
+        }
+
+    }
+    @media (max-width: 300px){
+      .send{
+          font-size: 1rem;
+          height: 4vh;
+          width: 22vw;
+      }  
+      .name, .email{
+          font-size: 0.7rem;
+        
+
+      }
+      textarea{
+          height: 88vw;
+          width: 88vw;
+      }
+    }
+    

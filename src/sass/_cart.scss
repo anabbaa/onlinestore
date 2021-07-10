@@ -1,0 +1,20 @@
+.cart{
+    @include flex-col-between;
+    height:  69vh;
+    width: 44vw;
+    margin: auto;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 3rem;
+    
+
+@include responsive (tab){
+    font-size: 2rem;
+    width: 49vw;
+    background-color: red;
+
+}
+li{
+    list-style: none;
+}
+}

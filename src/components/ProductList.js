@@ -1,5 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import ProductItems from "./ProductItems";
+import LookUp from "./Lookup";
+
 import { StoreContext } from "../context";
 
 const ProductList = () => {
@@ -22,12 +24,13 @@ const ProductList = () => {
   return (
     <React.Fragment>
       <div>
+        <LookUp />
         <button className="bill" onClick={() => setTotalBill(contextObj.store.bill())}>
           Total bill
         </button>
         <h6 className="total">{totalBill}€</h6>
       </div>
-      <ul>
+      <ul className="ul-store">
       {items}</ul>
     </React.Fragment>
   );

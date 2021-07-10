@@ -13,7 +13,9 @@ const LookUp = () => {
     const userText = userInput.toLocaleLowerCase().trim();
     contextObj.setStore((prevState) => {
       return { ...prevState, filteredData: contextObj.store.lookFor(userText) };
+
     });
+    setUserInput("");
   };
 
   return (

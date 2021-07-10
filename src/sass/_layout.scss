@@ -1,143 +1,28 @@
 body {
-    @include flex-col;
+  @include flex-col-between;
     width: 100vw;
     height: 100vh;
     text-align: center;
     background: linear-gradient(to bottom,
     lightgray, #333 50%, #eee 75%, white 75%);
 }
-    
-ul { 
-        @include flex-row-between;
-        height: 50vh;
-        width: 100vw;
-       list-style: none;   
-       
 
- li {
-     @include flex-col;
-   border: 1px solid black;
-   width: 20vw;
-   height: 50vh;
-   margin: 5%;
-   margin-top: 2vh;
-   font-size: 2rem;
-   @include responsive(mobile){
-    width: 50vw;
-    height: 50vh;
-margin: 5%;
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+ .title{
+     position: relative;
+     top: 6vh;
+     @include responsive (tab){
+ left: 50vw;
+ top: 4vh;
    }
-   
-@include responsive(tab){
-    width: 30vw;
-    height: 66vh;
+   @include responsive (mobile){
+     top: 6vh;
+   }
 
-    
-}
-}
-        
-        .addcart{
-            width: 12vw;
-            height: 22vh;
-            background-color: rgb(0, 162, 255);
-            font-size: 1.2rem;
-            text-align: center;
-            position: relative;
-            top: 2vh;
-            @include responsive(mobile){
-                top: -4vh;
-                width: 19vw;
-                height: 4vh;
-                font-size: 1rem;
-            }
-            @include responsive(tab){
-                top: -1vh;
-                width: 19vw;
-                height: 4vh;
-                font-size: 1rem;
-            }
-            
-        }
-    }
-    h2, h3{
-        color: red;
-        font-size: 3rem;
 
-    }
-    h4, img, h5{
-        position: relative;
-        top: 2vh;
-        @include responsive (mobile){
-            height: 100px;
-            width: 100px;
-            top: 6vh;
+ }
 
-        }
-        @include responsive(tab){
-            width: 150px;
-        height: 150px;
-        top: 6vh;
-    }
-    
-    
-    }
-    
-    
-    .search{
-        border: none;
-        outline: none;
-        background-color: transparent;
-        border-bottom: 1px solid red;
-        font-size: 2rem;
-        &::placeholder{
-            color: black;
-            text-align: center;
-        }
-        @include responsive(mobile){
-            width: 44vw;
-        }
-    }
-    .filter{
-        background-color: rgb(0, 195, 255);
-        height: 4vh;
-        width: 8vw;
-        font-size: 1.5rem;
-        text-align: center;
-        @include responsive(mobile){
-            width: 12vw;
-        }
-        @include responsive(tab){
-            height: 5vh;
-        }
-    }
-    .bill{
-        height: 10vh;
-        width: 16vw;
-        font-size: 2rem;
-        position: relative;
-        top: 2vh;
-        background-color: rgb(0, 132, 255);
-        @include responsive(mobile){
-        font-size: 1rem;
-        height: 6vh;
-        width: 16vw;
-        }
-        @include responsive(tab){
-            font-size: 1rem;
-            height: 8vh;
-        }
-    }
-    .total{
-        position: relative;
-        top: 3vh;
-        height: 4vh;
-        left: 50vw;
-        width: 4vw;
-        color: white;
-        font-size: 3rem;
-        @include responsive(mobile){
-        margin-left:5vw;
-        }
-    
-    }
-    
