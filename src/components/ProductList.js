@@ -1,14 +1,12 @@
 import React, { useState, useContext, useEffect } from "react";
 import ProductItems from "./ProductItems";
 import LookUp from "./Lookup";
-
 import { StoreContext } from "../context";
 
 const ProductList = () => {
   const contextObj = useContext(StoreContext);
   const [totalBill, setTotalBill] = useState(0);
   const [arr, setArr] = useState(contextObj.store.data);
-  console.log(contextObj.store.data);
   useEffect(() => {
     setArr(
       contextObj.store.filteredData.length
@@ -16,22 +14,23 @@ const ProductList = () => {
         : contextObj.store.data
     );
   }, [contextObj.store.filteredData, contextObj.store.data]);
-  console.log(contextObj.store);
+  // console.log(contextObj.store);
   const items = arr.map((item, i) => (
-    <ProductItems key={i} info={item} contextObj={contextObj} />
+    <ProductItems key={i} info={item} contextObj={contextObj} filteredDataArr={arr} />
   ));
 
   return (
     <React.Fragment>
-      <div>
+      <div className="ulFather">
         <LookUp />
         <button className="bill" onClick={() => setTotalBill(contextObj.store.bill())}>
           Total bill
         </button>
         <h6 className="total">{totalBill}€</h6>
-      </div>
+      
       <ul className="ul-store">
       {items}</ul>
+      </div>
     </React.Fragment>
   );
 };

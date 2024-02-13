@@ -12,9 +12,6 @@ const Contact=()=>{
             <textarea  cols="88" rows="22"        />
             <input className="send" type="submit" value="submit" onSubmit={handleSubmit}/>  
         </div>
-
-        
-
         </React.Fragment>
     )
 }

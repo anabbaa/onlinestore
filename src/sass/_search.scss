@@ -1,0 +1,52 @@
+div ~ div {
+    @include flex-col-between;
+    height: 20vh;;
+}
+form{
+    @include flex-row-center;
+    height: 10vh;
+    width: 100vw;
+input[placeholder="search"]{
+    border: none;
+    outline: none;
+    width: 20vw;
+    background-color: transparent;
+    border-bottom: 1px solid wheat;
+    font-size: 2rem;
+    &::placeholder{
+        color: black;
+        text-align: center;
+}
+}
+}
+input[value="filter"]{
+    background-color: rgb(0, 195, 255);
+    height: 4vh;
+    width: 10vw;
+    align-self:center;
+    font-size: 1.5rem;
+    margin-left: 2vw;
+    @include responsive(minimobile){
+        width: 22vw;   
+}
+}
+
+.bill{
+    height: 8vh;
+    width: 16vw;
+    font-size: 2rem;
+    background-color: rgb(0, 132, 255);
+    @include responsive(tab){
+        font-size: 1rem;
+    }
+}
+.total{
+    color: white;
+    font-size: 3rem;
+    @include responsive(minimobile){
+        left: 88vw;
+    }
+    @include responsive(mobile){
+        left: 88vw;
+    }
+}

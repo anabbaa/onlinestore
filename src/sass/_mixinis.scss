@@ -23,6 +23,30 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;   
+
+}
+
+@mixin flex-col-around{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;  
+}
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+@mixin flex-row-end{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: flex-end;
+
+    
 }
 
 @mixin  responsive ($breakpoint) {
@@ -40,8 +64,5 @@
         }
         @if $breakpoint == minimobile  {
             @media  (max-width: 300px) {@content};
-             }
-
-        
-                                                 
+             }                                                
 }

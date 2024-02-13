@@ -1,7 +1,7 @@
 body {
   @include flex-col-between;
-    width: 100vw;
-    height: 100vh;
+    width: 99.2vw;
+    height:100vh;
     text-align: center;
     background: linear-gradient(to bottom,
     lightgray, #333 50%, #eee 75%, white 75%);
@@ -14,7 +14,6 @@ box-sizing: border-box;
  }
  .title{
      position: relative;
-     top: 6vh;
      @include responsive (tab){
  left: 50vw;
  top: 4vh;
@@ -22,7 +21,4 @@ box-sizing: border-box;
    @include responsive (mobile){
      top: 6vh;
    }
-
-
  }
-

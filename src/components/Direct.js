@@ -17,11 +17,6 @@ const Direct = ()=>{
      <Link className="a" to="/contact">
        <li className="nav-li">Contact us</li>
      </Link>
-     <Link className="a" to="/about">
-       <li className="nav-li">About</li>
-     </Link>
-     
-     
      </ul>
    </nav>
    </div>

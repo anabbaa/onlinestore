@@ -1,20 +1,17 @@
-.cart{
-    @include flex-col-between;
-    height:  69vh;
-    width: 44vw;
-    margin: auto;
-    background-color: yellowgreen;
-    color: white;
-    font-size: 3rem;
-    
 
+.cart{
+    height: calc(100% - 4vh);
+    @include flex-col;
+    
 @include responsive (tab){
     font-size: 2rem;
     width: 49vw;
     background-color: red;
-
 }
 li{
+    @include flex-col-between;
+height: 10vh;
     list-style: none;
+    color: rgb(0, 98, 255);
 }
 }

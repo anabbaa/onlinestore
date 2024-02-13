@@ -16,5 +16,4 @@ const Store = {
 
 const StoreContext = React.createContext(Store);
 
-
 export { Store, StoreContext };

@@ -1,16 +1,11 @@
 import { useState } from "react";
 import { Store, StoreContext } from "./context";
-
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
 import Direct from "./components/Direct";
 import Contact from "./components/Contact";
-import About from "./components/About";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-
-
-
 //import Cart from "./components/Cart";
 function App() {
   console.log(StoreContext);
@@ -22,33 +17,22 @@ function App() {
   const [store, setStore] = useState(Store);
   return (
     <StoreContext.Provider value={{ store, setStore }}>
-
       <Router>
       <Direct />
-
       <h1 className="title">Online Store</h1>
-
-
       <Switch>
-     <Route path="/cart" exact component ={Cart}/> 
-   
-  
-     
+     <Route path="/cart" exact component ={Cart}/>      
       <Route path="/productlist" exact component ={ProductList}/>
-      <Route path="/about" exact component ={About}/>
       <Route path="/contact" exact component ={Contact}/>
       <Route path={() => "/main" || "/admin" || "/any-other-word"}>
         </Route>  
-
-
-
-
       </Switch>
       </Router>
+            <Footer />
 
+   
+     
     </StoreContext.Provider>
   );
 }
-
 export default App;
-

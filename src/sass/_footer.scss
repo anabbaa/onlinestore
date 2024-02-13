@@ -1,0 +1,42 @@
+.footerFather{
+    width: 99vw;
+    height:20vh;
+    position: fixed;
+    bottom: 0;
+    @include flex-col-between;
+    .FooterwrapperFather{
+        width: 100%;
+        height: 4vh;
+        background-color: antiquewhite;
+
+    }
+    .footer{
+        background-color: rgb(27, 26, 25);
+
+        width: 100%;
+        height: 16vh;
+        @include flex-col-between;
+        .iconFather{
+            width: 20vw;
+            height: 5vh;
+            @include flex-row-between;
+        }
+         .made{
+            width: 20vw;
+            height: 5vh;
+            color: white;
+            font-size: 2rem;
+        }
+        .copy{
+            width: 25vw;
+            height: 5vh;
+            @include flex-row-between;
+            color: white;
+            font-size: 2rem;
+    }
+    a{
+        list-style: none;
+        color:#ffff;
+    }
+    }
+}
