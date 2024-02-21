@@ -26,14 +26,14 @@
             height: 6vh;
             width: 50vw;
             color: white;
-            font-size: 2rem;
+            font-size: 1rem;
         }
         .copy{
-            width: 25vw;
+            width: 15vw;
             height: 8vh;
             @include flex-row;
             color: white;
-            font-size: 2rem;
+            font-size: 1rem;
     }
     a{
         list-style: none;
