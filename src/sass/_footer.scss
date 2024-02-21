@@ -18,19 +18,20 @@
         @include flex-col-between;
         .iconFather{
             width: 20vw;
-            height: 5vh;
+            height: 6vh;
             @include flex-row-between;
         }
          .made{
             width: 20vw;
-            height: 5vh;
+            height: 6vh;
+            width: 50vw;
             color: white;
             font-size: 2rem;
         }
         .copy{
             width: 25vw;
-            height: 5vh;
-            @include flex-row-between;
+            height: 8vh;
+            @include flex-row;
             color: white;
             font-size: 2rem;
     }
